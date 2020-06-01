@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API Project</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/news.css">
+</head>
+<body>
+    <section id="linkHeader">
+        <article>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark linkTags">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse linkTagsContent" id="navbarNavAltMarkup">
+              <div id="latestNews">
+                <div>
+                   <i class="fad fa-bullhorn"></i> 
+                  <h6>Latest News</h6>
+                </div>
+                <!-- <p></p> -->
+              </div>
+              <div class="navbar-nav navLink">
+                <a class="nav-item nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-tumblr"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fab fa-pinterest-p"></i></a>
+              </div>
+            </div>
+          </nav>
+        </article>
+      </section>
+
+      <section id="headings">
+        <article>
+           <!--<div id="logoImg">
+            <img src="images/heading-back.jpg" alt="logo">
+          </div> -->
+          <div id="logoTag">
+            <h1 style="align-items: center;">NEWS PORTAL</h1>
+            <h6 style="align-items: center;">News@24*7 &nbsp Latest Updates of Country</h6>
+          </div>
+          <!-- <div id="animatedTag">
+              </div> -->
+          <!-- <div id="cityTempTag">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <h5>Live</h5>
+            </div>
+            <i id="liveCity">city</i>
+            <i id="liveTemp">temp</i>
+          </div> -->
+        </article>
+      </section>
+
+      <section>
+        <article id="articles">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Corona Details
+            </a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <h5 style="margin-top: 16px;">CORONA DETAILS</h5>
+                     <span>GLOBAL</span> 
+                  <li class="nav-item">
+                    <a class="nav-link" id="covidBlock"></a>
+                  </li>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </article>
+
+        <article class="container">
+          <div id="articlesContent">
+            <div class="row">
+              <div class="col-md-3">
+                <h5 style="text-align: center;" class="p-2 border-bottom
+                text-white font-weight-bold bg-primary mt-2 text-uppercase">Sports News</h5>
+
+                <div class="sportsSection">
+                  <div id="sportsFirstTemplate"></div>
+                  <div id="sportsAllTemplate"></div>
+                </div>
+              </div>
+              <!---sports news-->
+
+              <div class="col-md-3">
+               <form id="form">
+                   <h5 style="text-align: center;background-color: #007bff !important;" class="p-2 border-bottom text-white font-weight-bold bg-secondary mt-2 text-uppercase">Weather News</h5>
+                   <input type="search" class="form-control" id="input" placeholder="Enter City Name">
+               </form>
+               <div id="weatherTemplate"></div>
+              </div>
+              <!---weather details-->
+
+              <div class="col-md-3">
+                <h5 style="text-align: center;" class="p-2 border-bottom
+                text-white font-weight-bold bg-primary mt-2 text-uppercase">Technology News</h5>
+
+                <div class="techSection">
+                  <div id="techFirstTemplate"></div>
+                  <div id="techAllTemplate"></div>
+                </div>
+              </div>
+              <!----technology news-->
+
+              <div class="col-md-3 ml-auto">
+                <h5 style="text-align: center;" class="p-2 border-bottom
+                          text-white font-weight-bold bg-primary mt-2 text-uppercase">Entertainment news</h5>
+
+                <div class="entertainmentSection">
+                  <div id="entertainmentFirstTemplate"></div>
+                  <div id="entertainmentAllTemplate"></div>
+                </div>
+              </div>
+              <!---entertainment news-->
+              
+        </div>
+        </article>
+      </section>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="./js/covid19.js"></script>
+      <script src="./js/sportsApi.js"></script>
+      <script src="./js/weather.js"></script>
+      <script src="./js/technologyApi.js"></script>
+      <script src="./js/enterApi.js"></script>
+</body>
+
+</html>
